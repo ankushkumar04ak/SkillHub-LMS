@@ -7,7 +7,8 @@ body {
 header {
     background-color: #1e293b;
     text-align: center;
-    padding: 5px;
+    padding: 5px; 
+    font-weight: bold;
 
 }
 
@@ -24,16 +25,21 @@ nav a {
     margin: 15px;
 }
 
-nav a :hover {
-    color: blue;
+nav  :hover {
+    transform: scale(1.25);
+    color: rgb(202, 244, 244) ;
+    
 }
 
 .hero {
     text-align: center;
-    padding: 50px;
-    background-color: #1e293b;
+    padding: 80px;
     border-radius: 10px;
-
+    background-image: url(./assets/herobackground.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
 }
 
 @media (max-width : 768px) {
@@ -50,7 +56,7 @@ nav a :hover {
     }
 
     .feature {
-        width:100%;
+        width: 100%;
     }
 
 }
@@ -74,14 +80,27 @@ nav a :hover {
 }
 
 .about {
-    margin: 30px;
-    padding: 30px;
+    margin: 2px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
     background-color: #1e293b;
     border-radius: 10px;
 
 }
 
+.course {
+    text-align: center;
+    padding: 20px;
+    background: #1e293b;
+    margin: 2px;
+    margin-bottom: 5px;
 
+}
+.course img{
+    height: 200px;
+    width: auto;
+}
 
 .course-container {
     display: flex;
@@ -89,12 +108,13 @@ nav a :hover {
     gap: 25px;
     flex-wrap: wrap;
     margin: 20px;
+    margin: 20px;
 }
 
 
 .card {
-    background-color: white;
-    color: black;
+    background-color: rgb(59, 113, 113);
+    color: white;
     width: 250px;
     padding: 20px;
     border-radius: 10px;
@@ -103,7 +123,7 @@ nav a :hover {
 }
 
 .card:hover {
-    transform: translateY (-10px);
+    transform: scale(1.05);
 }
 
 /* .box-model-demo {
@@ -129,7 +149,7 @@ nav a :hover {
 } */
 
 .student-card {
-    background: #1e293b;
+    background: black;
     border:
         2px solid #e8e8e8;
     border-radius:
@@ -142,6 +162,22 @@ nav a :hover {
         200px;
     text-align:
         center;
+
+}
+
+.student-card img {
+    height: 200px;
+    width: auto;
+}
+
+.testimonials :hover {
+    transform: scale(1.025);
+}
+
+.testimonialsec {
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
 }
 
 .testimonials {
@@ -153,6 +189,7 @@ nav a :hover {
     padding: 60px;
     text-align: center;
     background: #1e293b;
+    margin: 2px;
 }
 
 .feature-container {
@@ -170,8 +207,12 @@ nav a :hover {
     box-shadow: 0 0 15px rgba(0, 0, 0, .15);
     transition: .3s;
 }
+.feature img{
+    height: 200px;
+    width: auto;
+}
 
-/* Hover — zoom effect */
+
 .feature:hover {
     transform: scale(1.05);
 }
@@ -185,4 +226,17 @@ nav a :hover {
 
 .cta button {
     margin-top: 20px;
+}
+
+footer {
+    background:
+        black;
+    color:
+        white;
+    text-align:
+        center;
+    padding:
+        20px;
+    margin-top:
+        10px;
 }
